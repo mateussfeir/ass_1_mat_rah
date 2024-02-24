@@ -1,0 +1,47 @@
+header {
+    border: solid 2px black;
+    margin: 0 60px 0 60px;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    /* border: solid 2px black; */
+    /* margin-top: 0; */
+}
+
+#nav-links li {
+    margin-right: 50px;
+    /* border: solid 2px black; */
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    /* border: solid 2px black; */
+}
+
+#page_title {
+    margin-left: 5px;
+    margin-top: 40px;
+    /* border: solid 2px black; */
+}
+
+#course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: solid 2px black; */
+    margin-left: 70px;
+}
+
+#page_title {
+    grid-column: 1 / -1; /* Span all columns */
+}
+
+.course_image {
+    width: 150px;
+    height: 300px; 
+}
+
+
+

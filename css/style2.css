@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+header, footer{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@0;1&display=swap');
+main{
+    font-family: "Exo 2", sans-serif;
+}
+
+body{
+    /* color: black; not necessary */
+    background-color: #04d3f3;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    border: solid 2px black;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+
+#nav-links {
+    display: flex;
+    margin-top: 38.25px; /* height of the text is 21.5px, so (100-21.5)/2 = 39.25 - 1(border) = 38.25px */
+    list-style-type: none;
+}
+
+#nav-links a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    padding: 20px;
+    /* border: solid 2px black; */
+}
+
+#page_title {
+    margin-left: 60px;
+    margin-top: 40px;
+    text-align: left;
+    /* border: solid 2px black; */
+}
+
+.course_item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-areas:
+    "image number"
+    "image title"
+    "image description";
+}
+.course_image { grid-area: image; }
+.course_number { grid-area: number; }
+.course_title { grid-area: title; }
+.course_description { grid-area: description; }
+
+
+#course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto;
+    gap: 15px 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    /* border: solid 2px black; */
+}
+
+#page_title {
+    grid-column: 1 / -1; /* Span all columns */
+}
+
+.course_image {
+    width: 125px;
+    height: 300px; 
+}
+
+footer{
+    border: solid 2px black;
+    margin: 0 60px 0 60px;
+}
+
+#footer-items{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header, main, footer{
+    text-align: center;
+    max-width: 100%;
+}
+
+header, footer{
+    background-color: #3ac24c;
+}
